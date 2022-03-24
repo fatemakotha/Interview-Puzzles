@@ -1,0 +1,37 @@
+Q) In a country where everyone wants a boy, each family continues having babies till they have a boy.</br>
+After a long time, what is the proportion of boys to girls in the country? (Assuming probability of having a boy or a girl is the same)
+
+Round off your answer to two decimal places and output the answer as I.xx where I is the integer part of your answer, and xx is the first two decimal places of 
+the rounded-off answer.
+
+
+
+ANS)
+Let NG be the expected number of girls before a boy is born.
+
+Let p be the probability that a kid is a girl and (1-p)
+be probability that a kid is boy.
+
+NG can be written as sum of following infinite series.
+
+NG = 0*(Probability of 0 girls) + 1* (Probability of 1 girl) + 2* (Probability of 2 girls) + .....
+   = 0*(1-p) + 1*p*(1-p) + 2*p*p*(1-p) + 3*p*p*p*(1-p) + 4*p*p*p*p*(1-p) +.....
+
+Putting p = 1/2 and (1-p) = 1/2 in above formula.
+
+* NG = 0*(1/2) + 1*(1/2)2 + 2*(1/2)3 + 3*(1/2)4  +  4*(1/2)5 + ....
+
+* 1/2*NG = 0*(1/2)2 + 1*(1/2)3 + 2*(1/2)4 + 3*(1/2)5  +  4*(1/2)6 + ....
+
+* NG - NG/2 =  1*(1/2)2 + 1*(1/2)3 + 1*(1/2)4 + 1*(1/2)5  +  1*(1/2)6 + ....
+
+Using sum formula of the Infinite Geometrical Progression (ratio < 1):
+
+NG/2 = (1/4)/(1-1/2) = 1/2
+     = 1
+Therefore, the Expected Number of number of girls = 1
+As the expected number of girls is 1 and there is always a baby boy, the expected ratio of boys and girls is 50:50 which is 1:1
+
+.'. Answer = 1.00
+
+
